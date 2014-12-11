@@ -5,7 +5,7 @@ OOM并不常见，以前遇到的几次只是随手改掉，并没有总结详�
 2. java.lang.OutOfMemoryError: GC overhead limit exceeded
 3. java.lang.OutOfMemoryError: unable to create new native thread
 
-第一种类型比较常见，第二、第三中类型很少遇到过。这次在FIX BUG的同时，打算对OOM进行一次较为深入的调查。本文记录了所有的调查结果，基于JDK 1.6和OpenJDK7.
+第一种类型比较常见，第二、第三中类型很少遇到过。这次在FIX BUG的同时，打算对OOM进行一次较为深入的调查。本文记录了所有的调查结果，基于JDK 1.7和OpenJDK7.
 
 # HotSpot VM的GC机制 #
 JVM规范要求一个JVM实现必须包括一个垃圾收集器来回收无用对象。基于以下两个假设：
