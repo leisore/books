@@ -5,4 +5,4 @@
 用于记录日常工作中遇到的问题和工作之余的东西。
 
 # Contact leisore #
-Mail: <leisore@gmail.com>
+Mail: <leisore@foxmail.com>
