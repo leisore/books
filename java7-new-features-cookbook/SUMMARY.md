@@ -5,7 +5,7 @@
     * [使用try-with-resources块改进异常处理代码](ch01/01_04.md)
     * [重建可以使用try-with-resources技术的资源](ch01/01_05.md)
     * [捕获多个异常类型以改进类型检测](ch01/01_06.md)
-    * [Java 7中的重新抛出异常](ch01/01_07.md)
+    * [在Java 7中重新抛出异常](ch01/01_07.md)
     * [使用菱形符号来进行构造器类型推断](ch01/01_08.md)
     * [使用@SafeVarargs注解](ch01/01_09.md)
 * [第二章 使用Paths定位文件和目录](ch02/README.md)
