@@ -62,8 +62,6 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.0</version>
                 <configuration>
-                    <source>${jdk.version}</source>
-                    <target>${jdk.version}</target>
                     <fork>true</fork>
                     <debug>true</debug>
                     <optimize>true</optimize>

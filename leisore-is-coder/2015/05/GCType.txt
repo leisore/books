@@ -1,0 +1,11 @@
+截至JDK 1.8.0，青年带和老年代一共有8种GC类型，各占4种，分别如下：
+    Yong GC: Copy, PS Scavenge, ParNew, G1 Young
+    Old GC : MarkSweepCompact, PS MarkSweep, ConcurrentMarkSweep, G1 Old
+
+在我本机测试，JVM参数和GC类型对应关系如下：
+    -XX:+UseSerialGC:                         young Copy,        old MarkSweepCompact
+    -XX:+UseParallelGC -XX:+UseParallelOldGC: young PS Scavenge, old PS MarkSweep
+    -XX:+UseParNewGC:                         young ParNew,      old MarkSweepCompact
+    -XX:+UseConcMarkSweepGC -XX:+UseParNewGC: young ParNew,      old ConcurrentMarkSweep
+    -XX:+UseConcMarkSweepGC -XX:-UseParNewGC: young Copy,        old ConcurrentMarkSweep
+    -XX:+UseG1GC:                             yong G1 Young,     old G1 Old
